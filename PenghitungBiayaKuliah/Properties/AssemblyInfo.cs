@@ -10,9 +10,9 @@ using System.Windows;
 [assembly: AssemblyTitle("PenghitungBiayaKuliah")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("ELCO PROJECT")]
 [assembly: AssemblyProduct("PenghitungBiayaKuliah")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyCopyright("EJECT Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
