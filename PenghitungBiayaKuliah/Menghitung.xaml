@@ -1,0 +1,51 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PenghitungBiayaKuliah"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="PenghitungBiayaKuliah.Menghitung"
+        mc:Ignorable="d"
+        Title="Menghitung" Height="539.5" Width="386" Background="#FF34495E" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="label" Content="Jumlah Mata Kuliah" HorizontalAlignment="Left" Margin="25,31,0,0" VerticalAlignment="Top" Height="27" Width="114" Foreground="White"/>
+        <TextBox x:Name="txtJumlahMatKul" HorizontalAlignment="Left" Height="27" Margin="156,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45" TextAlignment="Center" Background="#FF839DB8" Foreground="White" BorderBrush="{x:Null}" TextChanged="txtJumlahMatKul_TextChanged"/>
+        <Rectangle Fill="#FF47C9AF" HorizontalAlignment="Left" Height="154" Margin="25,85,-4,0" VerticalAlignment="Top" Width="359"/>
+        <Label x:Name="label_Copy" Content="Mata Kuliah Nomor" HorizontalAlignment="Left" Margin="33,108,0,0" VerticalAlignment="Top" Height="27" Width="116" Foreground="#FF34495E" FontWeight="Bold"/>
+        <Label x:Name="lblNoMatKul" Content="NULL" HorizontalAlignment="Left" Margin="156,108,0,0" VerticalAlignment="Top" Height="27" Width="45" Foreground="#FF34495E" RenderTransformOrigin="0.444,0.519" FontWeight="Bold"/>
+        <Label x:Name="label_Copy2" Content="SKS" HorizontalAlignment="Left" Margin="33,146,0,0" VerticalAlignment="Top" Height="27" Width="45" Foreground="#FF34495E" FontWeight="Bold"/>
+        <TextBox x:Name="txtSKSperMataKuliah" HorizontalAlignment="Left" Height="27" Margin="156,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45" TextAlignment="Center" Background="#FF3C9785" Foreground="White" BorderBrush="{x:Null}" TextChanged="txtSKSperMataKuliah_TextChanged"/>
+        <Label x:Name="label_Copy3" Content="Nilai" HorizontalAlignment="Left" Margin="33,189,0,0" VerticalAlignment="Top" Height="27" Width="45" Foreground="#FF34495E" FontWeight="Bold"/>
+        <Rectangle Fill="#FF2D7E6D" HorizontalAlignment="Left" Height="26" Margin="25,71,0,0" VerticalAlignment="Top" Width="142"/>
+        <Rectangle Fill="#FF47C9AF" HorizontalAlignment="Left" Height="169" Margin="25,284,-4,0" VerticalAlignment="Top" Width="359"/>
+        <Rectangle Fill="#FF2D7E6D" HorizontalAlignment="Left" Height="26" Margin="25,271,0,0" VerticalAlignment="Top" Width="142"/>
+        <Label x:Name="label_Copy4" Content="Index Prestasi (IP)" HorizontalAlignment="Left" Margin="33,310,0,0" VerticalAlignment="Top" Height="27" Width="121" Foreground="#FF34495E" FontWeight="Bold"/>
+        <Label x:Name="label_Copy5" Content="SKS Semester Ini" HorizontalAlignment="Left" Margin="33,342,0,0" VerticalAlignment="Top" Height="27" Width="106" Foreground="#FF34495E" RenderTransformOrigin="0.533,-0.037" FontWeight="Bold"/>
+        <Label x:Name="label_Copy6" Content="Harga Per SKS" HorizontalAlignment="Left" Margin="33,374,0,0" VerticalAlignment="Top" Height="27" Width="45" Foreground="#FF34495E" FontWeight="Bold"/>
+        <Label x:Name="label_Copy7" Content="Total SKS Yang Harus DI bayar" HorizontalAlignment="Left" Margin="33,406,0,0" VerticalAlignment="Top" Height="27" Width="190" Foreground="#FF34495E" FontWeight="Bold"/>
+        <TextBox x:Name="txtIP" HorizontalAlignment="Left" Height="27" Margin="248,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextAlignment="Center" Background="#FF3C9785" Foreground="White" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="txtSKSSemesterIni" HorizontalAlignment="Left" Height="27" Margin="248,342,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextAlignment="Center" Background="#FF3C9785" Foreground="White" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="txtHargaPerSKS" HorizontalAlignment="Left" Height="27" Margin="248,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextAlignment="Center" Background="#FF3C9785" Foreground="White" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="txtTotalSKSYangHarusDiBayar" HorizontalAlignment="Left" Height="27" Margin="248,406,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" TextAlignment="Center" Background="#FF3C9785" Foreground="White" BorderBrush="{x:Null}"/>
+        <Label x:Name="label_Copy8" Content="RP" HorizontalAlignment="Left" Margin="228,374,0,0" VerticalAlignment="Top" Height="27" Width="27" Foreground="White" RenderTransformOrigin="0.489,0.407"/>
+        <Label x:Name="label_Copy9" Content="RP" HorizontalAlignment="Left" Margin="228,406,0,0" VerticalAlignment="Top" Height="27" Width="27" Foreground="White"/>
+        <Button x:Name="cmdOke" Content="OKE" HorizontalAlignment="Left" Margin="228,24,-4,0" VerticalAlignment="Top" Width="156" Height="38" Click="cmdOke_Click" BorderBrush="{x:Null}" Foreground="White" Background="#FFC1372A"/>
+        <Button x:Name="cmdHitung" Content="HITUNG" HorizontalAlignment="Left" Margin="228,178,-4,0" VerticalAlignment="Top" Width="156" Height="37" Click="cmdHitung_Click" BorderBrush="{x:Null}" Foreground="White" Background="#FF8D44AD"/>
+        <Button x:Name="cmdNext" Content="NEXT" HorizontalAlignment="Left" Margin="228,124,-4,0" VerticalAlignment="Top" Width="156" Height="37" Click="cmdNext_Click" BorderBrush="{x:Null}" Background="#FFC1372A" Foreground="White"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="33,75,0,0" TextWrapping="Wrap" Text="Data Mata Kuliah" VerticalAlignment="Top" Height="19" Width="106" Foreground="White"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="33,274,0,0" TextWrapping="Wrap" Text="Hasil Perhitungan" VerticalAlignment="Top" Height="20" Width="116" Foreground="White"/>
+        <ComboBox x:Name="comboNilaiPerMataKuliah" HorizontalAlignment="Left" Margin="156,189,0,0" VerticalAlignment="Top" Width="45" Height="27">
+            <System:String>A</System:String>
+            <System:String>B</System:String>
+            <System:String>C</System:String>
+            <System:String>D</System:String>
+            <System:String>E</System:String>
+        </ComboBox>
+        <GroupBox x:Name="gbDataMatKul" Header="" HorizontalAlignment="Left" Margin="15,75,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="164" Width="339" Visibility="Hidden"/>
+        <GroupBox x:Name="gbHasilHitung" Header="GroupBox" HorizontalAlignment="Left" Margin="15,274,0,0" VerticalAlignment="Top" Width="339" Height="179" Visibility="Hidden"/>
+        <Button x:Name="button" Content="HOME" HorizontalAlignment="Left" Margin="56,463,0,0" VerticalAlignment="Top" Width="111" Height="38" RenderTransformOrigin="0.493,0.553" BorderBrush="{x:Null}" Foreground="White" Background="#FF8D44AD" Click="button_Click"/>
+        <Button x:Name="button_Copy" Content="EXIT" HorizontalAlignment="Left" Margin="206,463,0,0" VerticalAlignment="Top" Width="111" Height="38" Background="#FFC1372A" BorderBrush="{x:Null}" Foreground="White" Click="button_Copy_Click"/>
+
+    </Grid>
+
+</Window>
